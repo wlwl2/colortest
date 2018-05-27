@@ -1,7 +1,7 @@
 html {
   width: 100%;
   position: fixed;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -9,14 +9,14 @@ body {
   margin: 0;
   font-family: sans-serif;
   position: fixed;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .body-container {
   width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .color-picker-main-container {
