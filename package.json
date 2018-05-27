@@ -1,0 +1,17 @@
+{
+  "name": "color",
+  "version": "0.1.0",
+  "description": "color picker/palettes",
+  "keywords": [
+    "color",
+    "picker",
+    "palette"
+  ],
+  "author": "William Lim",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.1"
+  }
+}

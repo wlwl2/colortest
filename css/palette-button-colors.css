@@ -1,0 +1,28 @@
+.red {
+  background-color: #b91b1b;
+}
+
+.green {
+  background-color: #1e6712;
+}
+
+/* Blue background on white text */
+.blue {
+  background-color: #0b2732;
+}
+
+.yellow {
+  background-color: #cfc32c;
+}
+
+.purple {
+  background-color: #8965ad;
+}
+
+.orange {
+  background-color: #e8af4d;
+}
+
+.white-text {
+  color: white;
+}
