@@ -1,21 +1,17 @@
 html {
   width: 100%;
-  position: fixed;
-  overflow: hidden;
+position: fixed; height: 100%; overflow: hidden;
 }
 
 body {
   width: 100%;
   margin: 0;
   font-family: sans-serif;
-  position: fixed;
-  overflow: hidden;
+width: 100vw; height: 100vh; overflow-y: scroll; overflow-x: hidden; -webkit-overflow-scrolling: touch;
 }
 
 .body-container {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
+
 }
 
 .color-picker-main-container {
