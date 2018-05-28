@@ -153,11 +153,11 @@
   }
 })();
 
-window.addEventListener('touchstart', function (event) {
+document.addEventListener('touchstart', function (event) {
   event.preventDefault()
 }, false)
 
-window.addEventListener('touchmove', function (event) {
+document.addEventListener('touchmove', function (event) {
   event.preventDefault()
 }, false)
 
