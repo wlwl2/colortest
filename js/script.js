@@ -153,7 +153,7 @@
   }
 })();
 
-document.addEventListener('touchmove', function (event) {
+window.addEventListener('touchmove', function (event) {
   event.preventDefault()
 }, false)
 
