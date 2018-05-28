@@ -152,3 +152,11 @@
     })(i);
   }
 })();
+
+document.addEventListener('touchmove', function (event) {
+  event.preventDefault()
+}, false)
+
+document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+  event.stopPropagation()
+}, true)
