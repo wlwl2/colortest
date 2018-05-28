@@ -153,18 +153,56 @@
   }
 })();
 
-window.addEventListener('touchstart', function (event) {
-  event.preventDefault()
-}, false)
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
-window.addEventListener('touchmove', function (event) {
-  event.preventDefault()
-}, false)
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;
+}
 
-// document.querySelector('.body-container').addEventListener('touchstart', function (event) {
-//   event.stopPropagation()
-// }, true)
-//
-// document.querySelector('.body-container').addEventListener('touchmove', function (event) {
-//   event.stopPropagation()
-// }, true)
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
+}
+
+var limit = Math.max(document.body.scrollHeight, document.body.offsetHeight,
+document.documentElement.clientHeight, document.documentElement.scrollHeight,
+document.documentElement.offsetHeight) - window.innerHeight;
+
+window.addEventListener('scroll', function (event) {
+  console.log(window.scrollY)
+  console.log(limit)
+
+  if (window.scrollY === limit-1) {
+    console.log('disabled')
+    disableScroll()
+  } else {
+    console.log('enabled')
+    enableScroll()
+  }
+
+}, false)
