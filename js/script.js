@@ -152,13 +152,3 @@
     })(i);
   }
 })();
-
-// Prevents window from moving on touch.
-window.addEventListener('touchmove', function (event) {
-  event.preventDefault()
-}, {passive: false})
-
-// // Allows content to move on touch.
-// document.querySelector('.body-container').addEventListener('touchmove', function (event) {
-//   event.stopPropagation()
-// }, false)
