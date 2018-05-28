@@ -154,7 +154,11 @@
 })();
 
 window.addEventListener('touchmove', function (event) {
-  event.preventDefault()
+  // console.log(window.scrollY)
+  if (window.scrollY === 0) {
+    console.log('test')
+    window.scrollTo(0, 0)
+  }
 }, {passive:false})
 
 // document.querySelector('.body-container').addEventListener('touchmove', function (event) {
