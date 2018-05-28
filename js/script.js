@@ -157,6 +157,10 @@ window.addEventListener('touchmove', function (event) {
   event.preventDefault()
 }, {passive:false})
 
-document.querySelector('.body-container').addEventListener('touchmove', function (event) {
-  event.stopPropagation()
-}, {passive:false})
+// document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+//   event.stopPropagation()
+// }, {passive:false})
+
+// https://www.chromestatus.com/features/5093566007214080
+
+// AddEventListenerOptions defaults passive to false. With this change touchstart and touchmove listeners added to the document will default to passive:true (so that calls to preventDefault will be ignored)..
