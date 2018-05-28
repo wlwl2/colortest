@@ -4,21 +4,18 @@
   /* IE9 Compat Modes */
   src: url("../fonts/LatoLatin-Light.woff2") format("woff2"), url("../fonts/LatoLatin-Light.woff") format("woff"), url("../fonts/LatoLatin-Light.eot") format("truetype"); }
 html {
-  width: 100%;
   height: 100%;
-  overflow: hidden;
-  position: relative; }
+  width: 100%;
+  overflow: auto; }
 
 body {
   width: 100%;
   margin: 0;
   font-family: sans-serif;
-  height: calc(100% - 110px);
-  overflow: hidden; }
-
-.body-container {
   height: 100%;
-  overflow: auto; }
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .color-picker-main-container {
   width: 100%;
@@ -107,7 +104,7 @@ body {
     width: 30px;
     height: 30px; } }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 100px;
   background-color: #002b36;
@@ -136,7 +133,7 @@ footer a {
 
 @media screen and (max-width: 1023px) {
   footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #002b36;
     width: 100%;
