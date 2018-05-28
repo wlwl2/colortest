@@ -153,18 +153,12 @@
   }
 })();
 
+// Prevents window from moving on touch.
 window.addEventListener('touchmove', function (event) {
-  // console.log(window.scrollY)
-  if (window.scrollY === 0) {
-    console.log('test')
-    window.scrollTo(0, 0)
-  }
-}, {passive:false})
+  event.preventDefault()
+}, {passive: false})
 
-// document.querySelector('.body-container').addEventListener('touchmove', function (event) {
-//   event.stopPropagation()
-// }, {passive:false})
-
-// https://www.chromestatus.com/features/5093566007214080
-
-// AddEventListenerOptions defaults passive to false. With this change touchstart and touchmove listeners added to the document will default to passive:true (so that calls to preventDefault will be ignored)..
+// Allows content to move on touch.
+document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+  event.stopPropagation()
+}, false)
