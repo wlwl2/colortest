@@ -153,10 +153,10 @@
   }
 })();
 
-window.addEventListener('touchmove', function (event) {
+window.addEventListener('touchstart', function (event) {
   event.preventDefault()
 }, false)
 
-document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+document.querySelector('.body-container').addEventListener('touchstart', function (event) {
   event.stopPropagation()
 }, true)
