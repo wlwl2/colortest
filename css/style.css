@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'LatoLatinLight';
-  src: url("../fonts/LatoLatin-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/LatoLatin-Light.woff2") format("woff2"), url("../fonts/LatoLatin-Light.woff") format("woff"), url("../fonts/LatoLatin-Light.eot") format("truetype"); }
 html {
   width: 100%;
   position: fixed;
@@ -17,7 +12,7 @@ body {
 
 .body-container {
   width: 100vw;
-  height: calc(100vh - 110px);
+  height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
