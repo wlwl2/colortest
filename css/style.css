@@ -1,21 +1,13 @@
 html {
-  width: 100%;
-  position: fixed;
-  overflow: hidden; }
+  width: 100%; }
 
 body {
   width: 100%;
   margin: 0;
-  font-family: sans-serif;
-  position: fixed;
-  overflow: hidden; }
+  font-family: sans-serif; }
 
 .body-container {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  margin-bottom: 110px; }
+  overflow: auto; }
 
 .color-picker-main-container {
   width: 100%;
