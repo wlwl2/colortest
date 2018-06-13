@@ -12,14 +12,14 @@ body {
 
 .body-container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 110px);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
 .color-picker-main-container {
   width: 100%;
   font-size: 22px;
-  margin-bottom: 110px; }
+  padding-bottom: 110px; }
 
 .color-picker-component {
   display: table;
