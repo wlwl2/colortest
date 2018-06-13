@@ -14,7 +14,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 110px; }
 
 .color-picker-main-container {
   width: 100%;
