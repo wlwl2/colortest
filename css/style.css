@@ -9,15 +9,20 @@ html {
 body {
   width: 100%;
   margin: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  overscroll-behavior: none; }
 
 .body-container {
-  overflow: auto; }
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100px; }
 
 .color-picker-main-container {
   width: 100%;
-  font-size: 22px;
-  margin-bottom: 110px; }
+  font-size: 22px; }
 
 .color-picker-component {
   display: table;
