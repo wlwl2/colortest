@@ -11,10 +11,16 @@ body {
 
 .body-container {
   overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 100px;
+  right: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .color-picker-main-container {
   width: 100%;
   font-size: 22px;
-  margin-top: 110px;
+  // margin-bottom: 110px;
 }

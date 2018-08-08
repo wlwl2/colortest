@@ -13,12 +13,17 @@ body {
   overscroll-behavior: none; }
 
 .body-container {
-  overflow: auto; }
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 100px;
+  right: 0;
+  -webkit-overflow-scrolling: touch; }
 
 .color-picker-main-container {
   width: 100%;
-  font-size: 22px;
-  margin-top: 110px; }
+  font-size: 22px; }
 
 .color-picker-component {
   display: table;
@@ -103,7 +108,7 @@ body {
     height: 30px; } }
 footer {
   position: fixed;
-  top: 0;
+  bottom: 0;
   height: 100px;
   background-color: #002b36;
   width: 100%;
@@ -132,7 +137,7 @@ footer a {
 @media screen and (max-width: 1023px) {
   footer {
     position: fixed;
-    top: 0;
+    bottom: 0;
     background-color: #002b36;
     width: 100%;
     font-size: 0;
